@@ -5,13 +5,24 @@ Android动态权限申请框架
 基于AspectJX实现动态权限申请
 
 #### 使用说明
+项目根目录的gradle引入
+```
+  dependencies {
+        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.10'
+    }
+```
+app目录的gradle引入aspectjx插件
+```
+plugins {
+    id 'android-aspectjx'
+}
+```
 ```
 allprojects {
     repositories {
         maven { url 'https://jitpack.io' }
     }
 }
-
 ```
 ```
 dependencies {
